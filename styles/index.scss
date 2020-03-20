@@ -1,0 +1,108 @@
+@import "config";
+@import "fonts";
+
+.body {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.wrapper {
+    width: 60%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:800px) {
+    .wrapper {
+        width: 80%;
+    }
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        font-family: $logo-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5ram;
+        line-height: 1.5;
+        letter-spacing: -0.25px;
+        color: $font-color;
+    }
+
+    &__list {
+        width: 25%;
+        max-width: 214px;
+        display: flex;
+        justify-content: space-between;
+
+        &--item {
+            list-style: none;
+        }
+
+        &--link {
+            text-decoration: none;
+            font-family: $subtitle-font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1rem;
+            line-height: 1.4;
+            color: $font-color;
+
+            &:hover {
+                color:rgb(210, 153, 5);
+            }
+        }
+    }
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    
+    &__title {
+        font-family: $title-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 5.6rem;
+        line-height: 1.2;
+        letter-spacing: -2px;
+        text-align: center;
+        color: $font-color;
+        margin-bottom: .1em;
+    }
+
+    &__subtitle {
+        width: 66%;
+        margin: 1em auto;
+        font-family: $subtitle-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        text-align: center;
+        color: $font-color;
+    }
+
+    &__img {
+        margin-top: .6em;
+    }
+}
+    
+
+@media screen and (max-width:800px) {
+    .main {
+        width: 80%;
+    }
+}
