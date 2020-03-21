@@ -12,16 +12,11 @@
     width: 60%;
     height: 100vh;
     margin: 0 auto;
+    padding-top: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-}
-
-@media screen and (max-width:800px) {
-    .wrapper {
-        width: 80%;
-    }
 }
 
 .nav {
@@ -96,13 +91,24 @@
     }
 
     &__img {
+        width: 100%;
         margin-top: .6em;
     }
 }
     
 
 @media screen and (max-width:800px) {
-    .main {
-        width: 80%;
+    .wrapper {
+        width: 90%;
+    }
+    
+    .nav__list {
+        display: none;
+    }
+
+    .img {
+        clip: 0 140px 0 140px;
     }
 }
+
+/* list needs to move to left 
