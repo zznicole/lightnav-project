@@ -67,6 +67,7 @@
     align-items: space-between;
     
     &__title {
+        width: 50%;
         font-family: $title-font;
         font-style: normal;
         font-weight: 500;
@@ -75,12 +76,13 @@
         letter-spacing: -2px;
         text-align: center;
         color: $font-color;
-        margin-bottom: .1em;
+        margin: 0 auto;
+       
     }
 
     &__subtitle {
         width: 66%;
-        margin: 1em auto;
+        margin: 2em auto;
         font-family: $subtitle-font;
         font-style: normal;
         font-weight: normal;
@@ -93,6 +95,7 @@
     &__img {
         width: 100%;
         margin-top: .6em;
+        height: auto;
     }
 }
     
@@ -100,15 +103,16 @@
 @media screen and (max-width:800px) {
     .wrapper {
         width: 90%;
+        justify-content: space-around;
     }
     
     .nav__list {
         display: none;
+        
     }
 
-    .img {
-        clip: 0 140px 0 140px;
+    .main__title {
+        font-size: 3rem;
     }
 }
 
-/* list needs to move to left 
