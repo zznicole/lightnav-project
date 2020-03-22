@@ -14,11 +14,14 @@
     <div class="wrapper">
         <nav class="nav">
             <div class="nav__logo">Head.</div>
-            <ul class="nav__list">
+            <ul class="nav__list" id="lightnavlist">
                 <li class="nav__list--item "><a href="#" class="nav__list--link">Works</a></li>
                 <li class="nav__list--item "><a href="#" class="nav__list--link">Services</a></li>
                 <li class="nav__list--item "><a href="#" class="nav__list--link">Contact</a></li>
             </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fas fa-ellipsis-h"></i>
+            </a>
         </nav>
         <main class="main">
             <h1 class="main__title">Patagonia</h1>
@@ -28,6 +31,16 @@
             <img class="main__img" src="images/Image.png" alt="horses on the field">
         </main>
     </div>
+<script>
+function myFunction() {
+    var x = document.getElementById("lightnavlist");
+    if (x.className === "nav__list") {
+    x.className += " responsive";
+    } else {
+    x.className = "nav__list";
+    }
+}
+</script>   
 </body>
 </html>
 
